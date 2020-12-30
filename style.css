@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    body: 1024px;
+}
+
+#logo{
+    position: fixed;
+    z-index: 999;
+    width: 64px;
+    height: 64px;
+    top: 10px;
+    left: 10px;
+}
+
+#mail{
+    position: fixed;
+    z-index: 999;
+    top: 80px;
+    right: -50px;
+    color: black;
+    transform: rotate(270deg);
+}
+
+#body_wrapper{
+    position: absolute;
+    z-index: 998;
+}
+
+.size-wrapper{
+    width: 1024px;
+    margin: 0 auto;
+    background-color: white;
+    height: 100vh;
+}
+.block{
+    display: block;
+}
+
+#box{
+    width: 100vw;
+    height: 400vh;
+    background: white;
+    opacity: 0.5;
+}
+
+.intro{
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+#kor{
+    width: 250px;
+    opacity: 0;
+    padding-top: 200px;
+}
+#eng{
+    width: 500px;
+}
+
+#bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 997;
+}
+
+#content{
+    width: 100vw;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* 어바웃 */
+#about > #title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+#about > #sub_title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+    margin: 20px 0;
+}
+#about > #profile{
+    text-align: center;
+    width: 40%;
+    float: left;
+    margin-left: 50px;
+    margin-top: -150px;
+}
+
+#about > #profile > img{
+    height: 256px;
+    width: 256px;
+}
+
+#about > #profile > #test{
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    border: solid 2px #C7F3F1;
+    top: -10px;
+    left: 85px;
+    color: yellow;
+
+}
+
+#about > #description{
+    clear:left;
+    margin: 50px 0px 0px 50px;
+}
