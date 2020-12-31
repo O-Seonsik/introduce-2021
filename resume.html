@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
@@ -7,43 +7,162 @@
         <title>Choreographer-JS | Example One</title>
     </head>
     <body>
-        <img id="logo" style="cursor:pointer;" onclick="window.scrollTo(0,0);" class="float" src="res/logo.svg" data-aos="fade-up"/>
+        <img id="logo" style="cursor:pointer;" onclick="window.scrollTo(0,0);" class="float" src="res/logo.svg" alt="logo" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"/>
         <a id="mail" href="mailto:dhtjstlr777@gmail.com">dhtjstlr777@gmail.com</a>
-        <img id="eng" class="intro" src="res/eng.svg" />
-        <img id="kor" class="intro" src="res/kor.svg" />
+        <img id="eng" class="intro" src="res/eng.svg" alt="kor" />
+        <img id="kor" class="intro" src="res/kor.svg" alt="eng"/>
         <div id="body_wrapper">
             <div id="box"></div>
-            <div id="content">
+            <div class="content">
                 <div class="size-wrapper">
                     <div id="about">
-                        <span class="block" id="title">About O's</span>
-                        <span data-aos="fade-left" class="block" id="sub_title">컴퓨터를 전공하고<br>사진을 찍으며<br>힙합을 좋아하는<br>개발자입니다.</span>
+                        <span class="block title">About O's</span>
                         <div id="profile" data-aos="fade-right">
                             <img src="https://oseonsik.com/img/21139403.jpg" alt="O's">
-                            <div id="test"></div>
-                            <span style="display: block">오선식 @5linesys</span>
+                            <div id="frame"></div>
+                            <div>
+                                <span id="name">오선식</span>
+                                <span id="nickname">@5linesys</span>
+                            </div>
                             <p class="block">
                                 <a href="https://blog.oseonsik.com">Blog</a>
                                 <a href="https://www.facebook.com/5linesys">Facebook</a>
                                 <a href="https://github.com/O-Seonsik">Github</a>
                             </p>
                         </div>
-                        <div id="description">
-                            <p>안녕하세요 poorstack개발자 오선식입니다.</p>
-                            <p>하고싶은 프로젝트가 생기면 환경과 역할에 국한하지 않고</p>
+                        <span data-aos="fade-left" data-aos-anchor-placement="bottom-center" class="block" id="sub_title">컴퓨터를 전공하고<br>사진을 찍으며<br>힙합을 좋아하는<br>개발자입니다.</span>
+                        <div data-aos="fade-up" id="description">
+                            <p>안녕하세요 개발자 오선식입니다.</p>
+                            <p>하고 싶은 프로젝트가 생기면 환경과 역할에 국한하지 않고</p>
                             <p>상황에 맞게 프론트와 백엔드를 하기도 하며 언어도 필요하면 새로 배웁니다.</p>
-                            <p>그래서 주언어는 딱히 없고, 주 분야도 지금은 뭔지 모르게 되었습니다.</p>
-                            <p>현재 가톨릭대학교에서 컴퓨터정보공학을 전공하고 있습니다.</p>
+                            <p>그래서 주 언어는 딱히 없고, 주 분야도 지금은 따로 없습니다.</p>
+                            <p>현재 컴퓨터정보공학을 전공하고 있습니다.</p>
                             <p>5linesys라는 닉네임을 주로 사용하지만 O's라고 많이 불러줍니다.</p>
-                            <p>궁금하지 않겠지만 ENTJ입니다.</p>
-                            <p>만나서 반갑습니다.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" style="background-color: #F0EEEE;">
+                <div class="size-wrapper">
+                    <div id="skills">
+                        <span class="block title">Skills</span>
+                        <div data-aos="fade-up" id="hashtag">
+                            <div>Front-end</div>
+                            <div>Back-end</div>
+                            <div>Web-fullstack</div>
+                            <div>Server</div>
+                            <div>Database</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="size-wrapper">
+                    <div id="aff">
+                        <span class="block title">Affiliation</span>
+                        <ul class="pretty">
+                            <li>
+                                <div class="logo">
+                                    <a href="http://iis.icehs.kr/">
+                                        <img src="res/iis.png" data-aos="fade-up" alt="">
+                                    </a>
+                                </div>
+                                <div class="explain">
+                                    <div>인천정보과학고등학교</div>
+                                    <div>컴퓨터정보통신과</div>
+                                    <div>2013 ~ 2016</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <a href="https://catholic.ac.kr">
+                                        <img src="res/catholic.png" data-aos="fade-up" alt="">
+                                    </a>
+                                </div>
+                                <div class="explain">
+                                    <div>가톨릭대학교</div>
+                                    <div>컴퓨터정보공학부</div>
+                                    <div>2016 ~ </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <a href="https://www.army.mil.kr/">
+                                        <img src="res/mil.png" data-aos="fade-up" alt="">
+                                    </a>
+                                </div>
+                                <div class="explain">
+                                    <div>대한민국 육군 제1야전군령부</div>
+                                    <div>전투무선장비운용/정비</div>
+                                    <div>2017 ~ 2018</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <a href="https://www.kitribob.kr/">
+                                        <img src="res/bob.png" data-aos="fade-up" alt="">
+                                    </a>
+                                </div>
+                                <div class="explain">
+                                    <div>Best of the Best(BoB)</div>
+                                    <div>보안제품개발트랙</div>
+                                    <div>2020 ~ 2021</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" style="background-color: #F0EEEE;">
+                <div class="size-wrapper">
+                    <div id="activity">
+                        <span class="block title">Activity</span>
+                        <ul class="pretty">
+                            <li>
+                                <div class="logo">
+                                    <a href="http://iis.icehs.kr/">
+                                        <img src="res/iis.png" data-aos="fade-up" alt="">
+                                    </a>
+                                </div>
+                                <div class="explain">
+                                    <div>인천정보과학고등학교</div>
+                                    <div>총학생회 부회장</div>
+                                    <div>2014 ~ 2015</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <a href="http://fan.catholic.ac.kr:3000">
+                                        <img src="res/fan.png" data-aos="fade-up" alt="">
+                                    </a>
+                                </div>
+                                <div class="explain">
+                                    <div>가톨릭대학교</div>
+                                    <div>전공학회 F.A.N 회장</div>
+                                    <div>2020</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="size-wrapper">
+                    <div id="projects">
+                        <span class="block title">Projects</span>
+                        <ul>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <img id="bg" src="res/bg.jpg"/>
+        <img id="bg" src="res/bg.jpg" alt="bg"/>
 
         <script src="node_modules/choreographer-js/dist/choreographer.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
