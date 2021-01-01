@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "aos": "^2.3.4",
-    "choreographer-js": "^1.1.0"
+    "choreographer-js": "^1.1.0",
+    "generate": "^0.14.0"
   }
 }
