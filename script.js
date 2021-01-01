@@ -15,8 +15,8 @@ let choreographer = new Choreographer({
 
         // mail
         {range: [height*3.7, height*4], selector: '#mail', type: 'scale', style: 'transform:rotate', from: 0, to: -90, unit: 'deg'},
-        {range: [height*3.7, height*4], selector: '#mail', type: 'scale', style: 'top', from: 10, to: 80, unit: 'px'},
-        {range: [height*3.7, height*4], selector: '#mail', type: 'scale', style: 'right', from: 10, to: -50, unit: 'px'}
+        {range: [height*3.7, height*4], selector: '#mail', type: 'scale', style: 'top', from: 10, to: 90, unit: 'px'},
+        {range: [height*3.7, height*4], selector: '#mail', type: 'scale', style: 'right', from: 10, to: -65, unit: 'px'}
     ]
 })
 window.addEventListener('scroll', function() {
