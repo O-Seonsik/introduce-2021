@@ -11,7 +11,7 @@ let choreographer = new Choreographer({
         // first message
         {range: [-1, height], selector: '#box', type: 'scale', style: 'opacity', from: 0.5, to: 0},
         {range: [height, height*1.5], selector: '#eng', type: 'scale', style: 'opacity', from: 1, to: 0},
-        {range: [height/2, height*2.5], selector: '#eng', type: 'scale', style: 'width', from: 500, to: 0, unit: "px" },
+        {range: [height/2, height*2.5], selector: '#eng', type: 'scale', style: 'width', from: 250, to: 0, unit: "px" },
 
         // mail
         {range: [height*3.7, height*4], selector: '#mail', type: 'scale', style: 'transform:rotate', from: 0, to: -90, unit: 'deg'},
