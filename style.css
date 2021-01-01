@@ -29,6 +29,7 @@ body{
 .size-wrapper{
     width: 1024px;
     margin: 0 auto;
+    padding: 15px 0;
 }
 .block{
     display: block;
@@ -37,6 +38,7 @@ body{
 #box{
     width: 100vw;
     height: 400vh;
+    /*background: #808080;*/
     background: white;
     opacity: 0.5;
 }
@@ -55,16 +57,19 @@ body{
     width: 250px;
     opacity: 0;
     padding-top: 200px;
+    z-index: 999;
 }
+
 #eng{
     width: 500px;
+    z-index: 999;
 }
 
 #bg{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 997;
+    z-index: 996;
 }
 
 .content{
@@ -89,13 +94,22 @@ body{
     font-size: 2rem;
     font-weight: bold;
     text-align: right;
+    float: right;
     margin-top: 50px;
-
 }
 #about > #profile{
     text-align: center;
     float: left;
     margin-top: -150px;
+}
+
+#about > #profile > p{
+    font-size: 2rem;
+    margin: 0;
+}
+
+#about >#profile > p > a{
+    color: black;
 }
 
 #about > #profile > img{
@@ -125,7 +139,7 @@ body{
 }
 
 #about > #description{
-    clear:left;
+    clear: both;
     text-align: center;
     margin: 50px 0 0 50px;
     font-size: 1.3rem;
@@ -152,6 +166,7 @@ body{
 }
 
 #hashtag > div:hover {
+    transition-duration: 200ms;
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -187,6 +202,7 @@ ul.pretty > li > .logo > a > img{
 }
 
 ul.pretty > li > .logo > a > img:hover {
+    transition-duration: 200ms;
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -201,4 +217,40 @@ ul.pretty > li > .explain{
     align-items: center;
     justify-content: center;
     width: 50%;
+}
+
+#projects > ul > li{
+    width: 100%;
+}
+
+#projects > ul > li > div{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#projects > ul > li > div > img{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 15px;
+}
+
+
+#projects > ul > li > div > img:hover{
+    transition: all 300ms;
+    /*transition-duration: 200ms;*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+footer{
+    text-align: center;
+    background-color: #F0EEEE;
 }
