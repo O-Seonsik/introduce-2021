@@ -1,11 +1,181 @@
 /*mobile*/
 @media only screen
 and (max-width: 768px) {
+    #logo{
+        position: fixed;
+        z-index: 999;
+        width: 32px;
+        height: 32px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .size-wrapper{
+        width: 100vw;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+
     #bg{
         position: fixed;
         width: 1024px;
         height: 100vh;
         z-index: 996;
+    }
+
+    .title{
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /*About*/
+    #about > #profile{
+        text-align: center;
+        margin-top: -150px;
+    }
+
+    #about > #profile > img{
+        height: 256px;
+        width: 256px;
+    }
+
+    #about > #profile > #frame{
+        width: 256px;
+        height: 256px;
+        position: absolute;
+        border: solid 2px #C7F3F1;
+        margin: 0 auto;
+        left: -10px;
+        right: 0;
+        top: -10px;
+    }
+
+    #about > #profile > div > #name{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    #about > #profile > div > #nickname{
+        font-size: 1.3rem;
+        color: #A6A6A6;
+    }
+
+    #about > #profile > p{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    #about >#profile > p > a{
+        color: black;
+    }
+
+    #about > #sub_title{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #about > #description{
+        padding: 0 30px;
+        clear: both;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 30px 0;
+    }
+
+    /*Skills*/
+    #hashtag{
+        text-align: center;
+    }
+
+    #hashtag > div::before{
+        content: "#"
+    }
+
+    #hashtag > div{
+        text-align: center;
+        margin: 0 auto;
+        display: inline-block;
+        width: 32%;
+        font-size: 1rem;
+        line-height: 5rem;
+        font-weight: bold;
+    }
+
+    #hashtag > div:hover {
+        transition-duration: 200ms;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        cursor: default;
+    }
+
+    /*Affiliation & Activity*/
+    ul.pretty > li{
+        width: 100%;
+        font-size: 1.5rem;
+        text-align : center;
+    }
+
+    ul.pretty >li >.logo{
+        height: 100%;
+        vertical-align: center;
+    }
+
+    ul.pretty > li > .logo > a > img{
+        width: 150px;
+    }
+
+    ul.pretty > li > .logo > a > img:hover {
+        transition-duration: 200ms;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+    }
+
+    ul.pretty > li > .explain{
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+
+    /*Projects*/
+    #projects > ul > li{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #projects > ul > li > div{
+        width: 100%;
+        position: relative;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        text-align: center;
+    }
+
+    #projects > ul > li > div > img{
+        margin: 15px;
+        position: relative;
+        width: 180px;
+        height: 180px;
+        border-radius: 15px;
+    }
+
+    #projects > ul > li > div > img:hover{
+        transition: all 300ms;
+        /*transition-duration: 200ms;*/
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
     }
 }
 
@@ -417,7 +587,9 @@ and (min-width : 1420px){
     }
 }
 
-body{
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: "NanumGothic", "NanumGothicOTF", "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
     margin: 0;
     padding: 0;
