@@ -1,5 +1,11 @@
 const height = window.innerHeight
 AOS.init();
+window.onload = function() {
+    setTimeout (function() {
+        scrollTo(0, 0);
+    }, 100);
+}
+
 let choreographer = new Choreographer({
     animations: [
         // second message
